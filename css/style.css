@@ -68,7 +68,7 @@ figure {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 1170px;
 }
 
@@ -181,4 +181,73 @@ figure {
   font-weight: 400;
   font-size: 14px;
   text-align: center;
+}
+
+/* Modules */
+
+.modules-logo {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.back-btn {
+  display: block;
+  font-size: 20px;
+  color: #3f2aff;
+  margin-bottom: 25px;
+  padding-left: 52px;
+  background-image: url("/img/arrow-1.png");
+  background-position: left center;
+  background-size: 45px auto;
+  background-repeat: no-repeat;
+}
+
+.modules-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 60px;
+  color: #3f2aff;
+}
+
+.modules-grid {
+  /* list-style: none; */
+}
+
+.modules-grid-item {
+  /* display: inline-block; */
+  width: 375px;
+  height: 272px;
+}
+
+.grid-item-img {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.grid-title {
+  margin-top: 0;
+  margin-bottom: 2px;
+  padding-left: 25px;
+  font-size: 40px;
+  color: #3f2aff;
+}
+
+.grid-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 25px;
+  line-height: 165%;
+  font-size: 20px;
+  color: #333;
+}
+
+.module-number {
+  margin-top: 0;
+  justify-self: end;
+  padding-top: 49px;
+  padding-right: 25px;
+  font-size: 40px;
+  /* color: #EAEAEA; */
 }
