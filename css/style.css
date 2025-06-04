@@ -214,8 +214,7 @@ figure {
 .modules-grid {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  display: block;
   gap: 25px;
   list-style: none;
 }
@@ -226,10 +225,21 @@ figure {
 
 .modules-grid-item {
   position: relative;
-  flex-direction: column;
-  height: 100%;
-  width: 572px;
+  display: block;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  height: 505px;
+  width: 560px;
   overflow: hidden;
+}
+
+.modules-grid-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.modules-grid-item:nth-last-child(-n+2) {
+  margin-bottom: 50;
 }
 
 .grid-title {
@@ -254,5 +264,15 @@ figure {
   bottom: 25px;
   right: 25px;
   font-size: 40px;
-  /* color: #EAEAEA; */
+  color: #EAEAEA;
+}
+
+.show-btn {
+  display: block;
+  margin: 0px auto;
+  padding: 24px 75px;
+  border: 2px solid #3f2aff;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f2aff;
 }
